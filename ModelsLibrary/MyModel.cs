@@ -7,6 +7,6 @@ namespace ModelsLibrary
 
     public class MyModel
     {
-        public string NewName { get; set; }
+        public string NewName { get; set; } = "myname";
     }
 }
