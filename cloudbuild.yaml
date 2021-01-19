@@ -1,10 +1,10 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'gcr.io/gcpd-294815/github.com', '.']
+  args: ['build', '-t', 'gcr.io/imp1-302218/github.com', '.']
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['push', 'gcr.io/gcpd-294815/github.com']
+  args: ['push', 'gcr.io/imp1-302218/github.com']
 - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
   entrypoint: 'bash'
-  args: ['-c', 'gcloud app deploy --image-url=gcr.io/gcpd-294815/github.com']
+  args: ['-c', 'gcloud app deploy --image-url=gcr.io/imp1-302218/github.com']
 timeout: '1600s'
-images: ['gcr.io/gcpd-294815/github.com']
+images: ['gcr.io/imp1-302218/github.com']
